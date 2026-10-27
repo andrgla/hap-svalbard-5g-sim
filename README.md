@@ -121,3 +121,13 @@ Simplifications:
 ## Results
 
 The figures in `figures/` come from the quick run. For report-quality numbers, run with `quick = false` and ideally average over several channel seeds.
+
+## Uplink plots
+
+The bear-to-HAP uplink ("NR UL, MRC" and "Custom UL, MRC" in the legends) appears in three of the four figures above:
+
+- **`figures/bler_vs_snr.png`**: the uplink BLER curves, combined by MRC across both HAPs, alongside the downlink curves in the same panels.
+- **`figures/throughput_at_operating_point.png`**: uplink throughput vs. bear position, against the 2 Mbit/s video target.
+- **`figures/required_bear_power.png`**: uplink only — the bear transmit power needed for BLER ≤ 10 % at each position, compared against the Shannon limit, the 67.46 mW link-budget figure from the notes, and the assumed 120 mW transmit power.
+
+The downlink frequency response plot (`figures/downlink_frequency_response.png`) is downlink-only and not part of the uplink results.
